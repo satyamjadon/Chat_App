@@ -84,7 +84,7 @@ const updateProfile =async(body)=>{
          newSocket.connect();
          setSocket(newSocket);
 
-         newSocket.on("getOnlineuser",(userIds)=>{
+         newSocket.on("getOnlineUser",(userIds)=>{
             setonlineUsers(userIds);
          })
     }

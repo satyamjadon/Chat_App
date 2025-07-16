@@ -12,7 +12,7 @@ const RightSidebar = () => {
  //Get all the images from the messages and set them to state
   useEffect(()=>{
     setMsgImages(
-      messages.filter(msg => msg.image).map(msg=>msg.images)
+      messages.filter(msg => msg.image).map(msg=>msg.image)
     )
   },[messages])
 
@@ -27,7 +27,7 @@ const RightSidebar = () => {
         {onlineUsers.includes(selectedUser._id) && <p className='w-2 h-2 rounded-full bg-green-500'></p>}
         {selectedUser.fullName}
         </h1>
-        <p className='px-10 mx-auto'>{selecteduser.bio}</p>
+        <p className='px-10 mx-auto'>{selectedUser.bio}</p>
     </div>
     <hr  className="border-[#ffffff50] my-4"/> 
 
